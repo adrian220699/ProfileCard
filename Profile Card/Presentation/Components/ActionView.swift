@@ -40,8 +40,8 @@ final class ActionView : UIView {
     
     //MARK: - Actions
     
-    var onFollowTapped: (() -> Void)?
-    var onMessageTapped: (() -> Void)?
+   var onFollowTapped: (() -> Void)?
+   var onMessageTapped: (() -> Void)?
     
     
     //MARK: - StackView

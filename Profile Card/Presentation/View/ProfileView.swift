@@ -26,8 +26,24 @@ final class ProfileView : UIView {
     }()
     
     private let actionsView : ActionView = {
-       
+        
         let view = ActionView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+        
+    }()
+    
+    private let aboutView : AboutView = {
+        
+        let view = AboutView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+        
+    }()
+    
+    private let skillView : SkillView = {
+        
+        let view = SkillView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
         
@@ -93,6 +109,8 @@ final class ProfileView : UIView {
         contentStackView.addArrangedSubview(profileHeaderView)
         contentStackView.addArrangedSubview(statsView)
         contentStackView.addArrangedSubview(actionsView)
+        contentStackView.addArrangedSubview(aboutView)
+        contentStackView.addArrangedSubview(skillView)
     }
     
     private func setupConstraints() {
@@ -113,7 +131,7 @@ final class ProfileView : UIView {
                 equalTo: trailingAnchor,
                 constant: -25
             ),
-                        
+            
             profileHeaderView.heightAnchor.constraint(equalToConstant: 250),
             
             statsView.heightAnchor.constraint(
@@ -126,7 +144,7 @@ final class ProfileView : UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-    
+        
         print("ProfileView: ", frame)
         print("Stack: ", contentStackView.frame)
         print("Header: ", profileHeaderView.frame)
@@ -140,6 +158,6 @@ final class ProfileView : UIView {
             print("Header: ", self.profileHeaderView.frame)
             print("Stats: ", self.statsView.frame)
         }
-
+        
     }
 }
