@@ -17,7 +17,6 @@ final class SkillView: UIView {
         
         label.font = .systemFont(ofSize: 15, weight: .semibold)
         label.textColor = .label
-        label.text = "Skills"
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -40,6 +39,12 @@ final class SkillView: UIView {
     }
     
     //MARK: - Private methods
+    
+    func configure(with viewData: SkillViewData) {
+   
+        skillLabel.text = viewData.skill
+        
+    }
     
     private func configureView() {
         backgroundColor = .secondarySystemBackground

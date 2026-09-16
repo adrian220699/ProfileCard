@@ -13,4 +13,5 @@ struct ProfileViewData {
     let job  : String
     let image : UIImage
     let stats : [StatViewData]
+    let skills : [SkillViewData]
 }

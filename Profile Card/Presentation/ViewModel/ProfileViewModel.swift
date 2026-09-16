@@ -18,7 +18,10 @@ final class ProfileViewModel {
             image: UIImage(systemName: "person.circle.fill")!,
             stats: [StatViewData(icon: UIImage(systemName: "star.fill")!, value: "120"),
                     StatViewData(icon: UIImage(systemName: "person.2.fill")!, value: "530"),
-                    StatViewData(icon: UIImage(systemName: "suit.heart.fill")!, value: "1.2K")]
+                    StatViewData(icon: UIImage(systemName: "suit.heart.fill")!, value: "1.2K")],
+            skills: [SkillViewData(skill: "Swift"),
+                     SkillViewData(skill: "UIKit"),
+                     SkillViewData(skill: "MVVM")]
             
             
         )
