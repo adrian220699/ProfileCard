@@ -21,7 +21,12 @@ final class ProfileViewModel {
                     StatViewData(icon: UIImage(systemName: "suit.heart.fill")!, value: "1.2K")],
             skills: [SkillViewData(skill: "Swift"),
                      SkillViewData(skill: "UIKit"),
-                     SkillViewData(skill: "MVVM")]
+                     SkillViewData(skill: "MVVM"),
+                     SkillViewData(skill: "Git")],
+            projects: [ProjectCardViewData(title: "Pokédex", description: "iOS application focused on consuming REST APIs and presenting Pokémon information through a modular architecture.", technologies: ["Swift","UIkit"]),
+                       ProjectCardViewData(title: "RickAndMortyAppSwiftUI", description: "iOS application built with SwiftUI focused on consuming and displaying data from the Rick and Morty API.", technologies: ["Swift","SwiftUI"]),
+                       ProjectCardViewData(title: "Budget", description: "iOS application focused on personal budget management and financial tracking.", technologies: ["Swift","SwiftUI"])]
+            
             
             
         )

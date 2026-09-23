@@ -14,4 +14,5 @@ struct ProfileViewData {
     let image : UIImage
     let stats : [StatViewData]
     let skills : [SkillViewData]
+    let projects : [ProjectCardViewData]
 }

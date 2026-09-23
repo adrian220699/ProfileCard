@@ -47,6 +47,12 @@ final class ProfileView : UIView {
         return view
     }()
     
+    private let projectsView : ProjectsView = {
+        let view = ProjectsView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private let contentStackView : UIStackView = {
         
         let stackView = UIStackView()
@@ -82,6 +88,8 @@ final class ProfileView : UIView {
         profileHeaderView.configure(with: viewData)
         statsView.configure(with: viewData.stats)
         skillsView.configure(with: viewData.skills)
+        projectsView.configure(with: viewData.projects)
+        
     }
     
     
@@ -112,6 +120,7 @@ final class ProfileView : UIView {
         contentStackView.addArrangedSubview(actionsView)
         contentStackView.addArrangedSubview(aboutView)
         contentStackView.addArrangedSubview(skillsView)
+        contentStackView.addArrangedSubview(projectsView)
     }
     
     private func setupConstraints() {
